@@ -13,7 +13,7 @@ RUN apt-get clean \
 	&& rm -rf /tmp/* /var/tmp/*  \
     && rm -rf /var/lib/apt/lists/*
 
-ADD mjpg_streamer-r63-nogspcav.tar.gz /mjpg-streamer
+ADD mjpg-streamer-experimental.tar.gz /mjpg-streamer
 WORKDIR /mjpg-streamer
 RUN ln -s /usr/include/linux/videodev2.h /usr/include/linux/videodev.h
 
